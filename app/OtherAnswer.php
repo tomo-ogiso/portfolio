@@ -14,7 +14,7 @@ class OtherAnswer extends Model
   ];
 
   public static $rules = array(
-      'answer' => 'required',
+      'answer' => 'required'
   );
 
   public function user()
