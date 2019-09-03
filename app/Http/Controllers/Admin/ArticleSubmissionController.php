@@ -8,6 +8,7 @@ use App\ArticleSubmission;
 use App\OtherAnswer;
 use App\Profile;
 use Illuminate\Support\Facades\Auth;
+use Storage;
 
 
 class ArticleSubmissionController extends Controller
@@ -42,7 +43,14 @@ class ArticleSubmissionController extends Controller
       $article->user_id = $user->id;
       $form = $request->all();
 
-      unset($form['_token']);
+      if (isset($form['attached_file'])) {
+          $path = Storage::disk('s3')->putFile('/', $form['attached_file'], 'public');
+          $article->attached_file = Storage::disk('s3')->url($path);
+      } else {
+          $article->attached_file = null;
+      }
+
+      unset($form['_token'],$form['attached_file']);
 
       $article->fill($form)->save();
 
@@ -60,8 +68,19 @@ class ArticleSubmissionController extends Controller
   {
       $this->validate($request, ArticleSubmission::$rules);
 
-      $article = ArticleSubmission::where('id', $request->id)->first();
+      $article = ArticleSubmission::find($request->id);
       $article_form = $request->all();
+
+      if (isset($article_form['attached_file'])) {
+          $path = Storage::disk('s3')->putFile('/', $article_form['attached_file'], 'public');
+          $article->attached_file = Storage::disk('s3')->url($path);
+          unset($article_form['attached_file']);
+      }
+
+      if (isset($request->remove)) {
+          $article->attached_file = null;
+          unset($article_form['remove']);
+      }
 
       unset($article_form['_token']);
 
