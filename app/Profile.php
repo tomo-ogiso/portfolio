@@ -20,7 +20,7 @@ class Profile extends Model
           return $this->belongsTo('App\User');
       }
 
-      public function other_questions()
+      public function article_submissions()
       {
           return $this->hasMany('App\ArticleSubmission', 'user_id');
     }
