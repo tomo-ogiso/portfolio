@@ -24,21 +24,19 @@
       <div class="row">
         <div class="col-md-10">
           <ul>
-            <li class="p-3"><h4><i class="far fa-id-card"></i> チャンネル別タイムライン</h4>
-              <font size="4">「いいね」数が増えている話題のチャンネルを閲覧することができます。</font>
+            <li class="p-3"><h4><i class="fa fa-sort-amount-up"></i> 記事別タイムライン</h4>
+              <font size="4">他ユーザーの記事を更新順で閲覧することができます。</font>
             </li>
-            <li class="p-3"><h4><i class="fas fa-id-card"></i> 記事別タイムライン</h4>
-              <font size="4">「いいね」数が増えている話題の記事を閲覧することができます。</font>
-            </li>
-            <li class="p-3"><h4><i class="fa fa-sort-amount-up"></i> フォロー記事</h4>
-              <font size="4">フォローしているチャンネルの記事を読むことができます。</font>
-            </li>
-            <li class="p-3"><h4><i class="fa fa-chart-bar"></i> 記事投稿</h4>
+            <li class="p-3"><h4><i class="fa fa-pencil-alt"></i> 記事投稿</h4>
               <font size="4">あなたのチャンネルから記事を作成し投稿することができます。あなたのスキルを発信しましょう。</font>
             </li>
-            <li class="p-3"><h4><i class="fa fa-btn fa-user-friends"></i> 記事投稿一覧</h4>
-              <font size="4">あなたが過去に投稿した記事を閲覧することができます。</font>
+            <li class="p-3"><h4><i class="fa fa-chart-bar"></i> 自分グラフ</h4>
+              <font size="4">自分のスキルや経験をまずは自己分析してみましょう。あなたが発信できることが他にもあるかもしれません。</font>
             </li>
+            <li class="p-3"><h4><i class="far fa-id-card"></i> プロフィール</h4>
+              <font size="4">あなたの紹介プロフィールを書きましょう。</font>
+            </li>
+
           </ul>
         </div>
       </div>
