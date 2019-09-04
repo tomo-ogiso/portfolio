@@ -21,7 +21,7 @@
   @if ($user->profile != null)
     <div class="balloon1 col-md-4 mb-5 mr-auto">
       <div class="icon"><h1><i class="fas fa-user-astronaut"></i><h1></div>
-      調子はどうだい？　{{ $user->profile->name }}<br>今日は{{ $today->format('Y年m月d日') }}です!
+      調子はどうだい？　{{ $user->profile->name }}さん！<br>今日は{{ $today->format('Y年m月d日') }}です!
     </div>
     <div class="image col-md-8 mx-auto">
       @if ($user->profile->image_path != null)
