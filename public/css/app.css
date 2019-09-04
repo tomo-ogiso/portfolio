@@ -9756,6 +9756,17 @@ h3 {
   text-align: center;
 }
 
+.image-submission {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  text-align: center;
+}
+
 .image-diary {
   -o-object-fit: cover;
      object-fit: cover;
