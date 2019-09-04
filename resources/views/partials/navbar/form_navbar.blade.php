@@ -32,18 +32,18 @@
                                  </a>
                          </li>
                          <li class="nav-item">
-                                 <a class="nav-link" href="">
-                                     <i class="far fa-id-card"></i>記事別タイムライン
-                                 </a>
-                         </li>
-                         <li class="nav-item">
-                                 <a class="nav-link" href="">
-                                     <i class="fas fa-sort-amount-up"></i>フォロー記事
+                                 <a class="nav-link" href="{{ action('Admin\ArticleSubmissionController@index') }}">
+                                     <i class="fas fa-sort-amount-up"></i>記事別タイムライン
                                  </a>
                          </li>
                          <li class="nav-item">
                                  <a class="nav-link" href="{{ action('Admin\ArticleSubmissionController@list') }}">
                                      <i class="fas fa-pencil-alt"></i>記事投稿
+                                 </a>
+                         </li>
+                         <li class="nav-item">
+                                 <a class="nav-link" href="{{ action('Admin\PortfolioController@list') }}">
+                                     <i class="fas fa-chart-pie"></i>自分グラフ
                                  </a>
                          </li>
                          <li class="nav-item">
