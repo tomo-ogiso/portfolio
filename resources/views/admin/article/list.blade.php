@@ -18,10 +18,10 @@
                 <p><small>{{ $article->updated_at->format('Y年m月d日') }}</small></p>
                 <p><b>タイトル：{{ $article->title }}</b></p>
                 <hr size="3" color="gray">
-                <p><b>記事内容：{{ $article->contents }}</b></p>
+                <p><b>記事内容：<br>{!! nl2br(e($article->contents)) !!}</b></p>
                 <hr size="3" color="gray">
                 @if ($article->attached_file != null)
-                  <p><b>添付ファイル：<img src="{{ $profile->image_path }}" alt="" class="image-profile mx-auto"></p>
+                  <p><b>添付ファイル：<img src="{{ $article->attached_file }}" alt="" class="image-submission mx-auto"></p>
                 @else
                   <p><b>添付ファイル：添付ファイルはございません。</b></p>
                 @endif
@@ -49,7 +49,7 @@
                       <hr size="3" color="gray">
                     @endforeach
                   @else
-                    <p>※まだ回答はありません。</p>
+                    <p>※まだコメントはありません。</p>
                   @endif
                 <div class="col-md-11 text-right">
                     <a href="{{ action('Admin\ArticleSubmissionController@edit', ['id' => $article->id]) }}" role='button' class='btn btn-success'>編集</a>
