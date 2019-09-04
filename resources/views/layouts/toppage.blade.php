@@ -23,7 +23,7 @@
 
     <style>
         #aaa {
-            background-image: url('2019-08-14.jpg');
+            background-image: url('images/2019-08-14.jpg');
             position: relative;
             z-index: 0;
             margin-right: auto;
