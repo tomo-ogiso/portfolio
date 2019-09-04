@@ -1,8 +1,223 @@
+
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #0099CC;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.image-mini {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.image-profile {
+  object-fit: cover;
+  border-radius: 50%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  text-align:center;
+}
+.image-diary {
+  object-fit: cover;
+  border-radius: 10%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  text-align:center;
+}
+.box{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #0099CC;
+  text-decoration: underline;
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: .4s;
+}
+.nav-link:hover, .nav-link:focus {
+  text-decoration: none;
+  text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83),
+             6px 0px 15px rgba(255, 255, 240, 0.83);
+}
+.nav-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+h2 {
+  position: relative;
+  padding-left: 25px;
+}
+
+h2:before {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 15px transparent;
+  border-bottom: solid 15px #0099CC;
+}
+h2:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 15px;
+  width: 100%;
+  border-bottom: solid 3px #0099CC;
+}
+//検索フォーム
+#form1{
+  position: relative;
+  max-width: 300px;
+  margin-bottom: 50px;
+}
+#sbox1{
+  border: 1px #C9C9C9 solid;
+  height: 50px;
+  padding: 0 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  outline: 0;
+  background: #eee;
+  border-radius:25px;
+}
+#sbtn1{
+  border: none;
+  height: 50px;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background: none;
+  color: #666;
+  border: none;
+  font-size: 20px;
+  outline: 0;
+  &:hover{
+    color:#7fbfff;
+  }
+}
+//
+.border_slide_btn {
+  position: relative;
+  display: inline-block;
+  color: #1B1B1B;
+  text-decoration: none;
+}
+.border_slide_btn:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.border_slide_btn::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+.border_slide_btn:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.head_test {
+    margin:  0;
+    position:  relative;
+    font-weight:  normal;
+    margin-bottom: 35px;
+    font-size: 40px;
+    text-align:  center;
+}
+.head_test-point {
+    display:  block;
+    font-size:  14px;
+    margin-top:  10px;
+    position:  relative;
+    width: 300px;
+    margin: 10px auto 0;
+    background-color: #f8fafc;
+}
+.head_test-point:before {
+    content: '';
+    height:  1px;
+    background-color: #000;
+    position:  absolute;
+    top: 0;
+    bottom:  0;
+    margin:  auto;
+    z-index: -1;
+    width: 350px;
+    left:  -30px;
+}
+
+.balloon1{
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  color: #495057;
+  background-color: #38c0c140;
+  margin-left: 10px;
+}
+.balloon1 .icon{
+  position: absolute;
+  left: -60px;
+  top: 10;
+}
+.balloon1::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -15px;
+  top: 20px;
+  border-right: 15px solid #38c0c140;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.ws-nr{
+  white-space: nowrap;
+}
