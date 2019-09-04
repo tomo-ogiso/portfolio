@@ -10,44 +10,44 @@
             @include ('partials.search.form_search')
           </div>
         </div>
-      @foreach ($questions as $question)
+      @foreach ($articles as $article)
         <div class="card mb-4">
           <div class="card-header">
-            @if ($question->user_id == $user->id)
+            @if ($article->user_id == $user->id)
               <a href="{{ action('Admin\ProfileController@list') }}">
             @else
-              <a href="{{ action('Admin\OtherUserProfileController@show', ['id' => $question->user_id])}}">
+              <a href="{{ action('Admin\OtherUserProfileController@show', ['id' => $article->user_id])}}">
             @endif
-            @if ($question->profile == null)
+            @if ($article->profile == null)
               <p class="image">
-                <img src="{{asset('images/noprofileimage.jpg')}}" alt="" class="image-mini mr-2">{{ $question->user->name }}
+                <img src="{{asset('images/noprofileimage.jpg')}}" alt="" class="image-mini mr-2">{{ $article->user->name }}
               </p>
-            @elseif ($question->profile != null && $question->profile['image_path'] == null)
+            @elseif ($article->profile != null && $article->profile['image_path'] == null)
               <p class="image">
-                <img src="{{asset('images/noprofileimage.jpg')}}" alt="" class="image-mini mr-2">{{ $question->profile->name }}
+                <img src="{{asset('images/noprofileimage.jpg')}}" alt="" class="image-mini mr-2">{{ $article->profile->name }}
               </p>
             @else
               <p class="image">
-                <img src="{{ $question->profile->image_path }}" alt="" class="image-mini mr-2">{{ $question->profile->name }}
+                <img src="{{ $article->profile->image_path }}" alt="" class="image-mini mr-2">{{ $article->profile->name }}
               </p>
             @endif
               </a>
           </div>
           <div class="card-body">
             <p class="card-text">
-              <a href="{{ action('Admin\OtherAnswerController@show', ['id' => $question->id]) }}">
-                <b>Q.質問：{{ $question->question }}</b>
+              <a href="{{ action('Admin\OtherAnswerController@show', ['id' => $article->id]) }}">
+                <b>タイトル：{{ $article->title }}</b>
               </a>
             </p>
           </div>
           <div class="card-footer">
             <span class="mr-5">
-              <small>{{ $question->created_at->format('Y年m月d日') }}</small>
+              <small>{{ $article->created_at->format('Y年m月d日') }}</small>
             </span>
-            @if ($question->other_answers->count() != 0)
+            @if ($article->other_answers->count() != 0)
               <span>
-                <a href="{{ action('Admin\OtherAnswerController@show', ['id' => $question->id]) }}">
-                  <i class="far fa-comment"></i> {{ $question->other_answers->count() }}
+                <a href="{{ action('Admin\OtherAnswerController@show', ['id' => $article->id]) }}">
+                  <i class="far fa-comment"></i> {{ $article->other_answers->count() }}
                 </a>
               </span>
             @else
@@ -61,7 +61,7 @@
     </div>
   </div>
   <div class="d-flex justify-content-center">
-    {{ $questions->appends(Request::all())->links() }}
+    {{ $articles->appends(Request::all())->links() }}
   </div>
 </div>
 @endsection
