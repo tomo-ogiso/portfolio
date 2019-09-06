@@ -50,3 +50,7 @@ URL：[https://givetech.herokuapp.com](https://givetech.herokuapp.com/)
   - Partial
 - ページネーション
 - 各種DBリレーション
+
+## 設計段階
+設計段階にEvernoteを作成しました
+[https://www.evernote.com/pub/ogisot/Portfolio](https://www.evernote.com/pub/ogisot/Portfolio)
