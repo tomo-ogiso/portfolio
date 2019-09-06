@@ -1,4 +1,4 @@
-![https://sukusho.nu/7K3I/](https://sukusho.nu/7K3I/)
+![https://imgur.com/dTWWArI](https://imgur.com/dTWWArI)
 
 # ギブテック
 ## 概要
