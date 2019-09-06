@@ -1,4 +1,4 @@
-![https://imgur.com/dTWWArI](https://imgur.com/dTWWArI)
+![https://github.com/tomo-ogiso/portfolio/issues/1#issue-490416334](https://github.com/tomo-ogiso/portfolio/issues/1#issue-490416334)
 
 # ギブテック
 ## 概要
