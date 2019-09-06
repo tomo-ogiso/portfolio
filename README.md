@@ -41,7 +41,7 @@ URL：[https://givetech.herokuapp.com](https://givetech.herokuapp.com/)
   - MySQL(開発環境)
   - PostgreSQL(本番環境)
 - 画像アップロード
-  -AWS S3
+  - AWS S3
 - テスト
   - PHPUnit・Dusk
 - グラフ作成
