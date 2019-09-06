@@ -52,6 +52,6 @@ URL：[https://givetech.herokuapp.com](https://givetech.herokuapp.com/)
 - 各種DBリレーション
 
 ## 設計段階
-設計段階にEvernoteを作成しました
+開発前にEvernoteに設計資料を作成しました
 
 [https://www.evernote.com/pub/ogisot/Portfolio](https://www.evernote.com/pub/ogisot/Portfolio)
