@@ -1,4 +1,4 @@
-![https://github.com/tomo-ogiso/portfolio/issues/1#issue-490416334](https://github.com/tomo-ogiso/portfolio/issues/1#issue-490416334)
+![https://user-images.githubusercontent.com/52222236/64444319-de401600-d10e-11e9-934a-12abc4e7eaf9.png](https://user-images.githubusercontent.com/52222236/64444319-de401600-d10e-11e9-934a-12abc4e7eaf9.png)
 
 # ギブテック
 ## 概要
