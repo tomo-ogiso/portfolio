@@ -1,4 +1,4 @@
-![Users/ogisotomo/Desktop/スクリーンショット 2019-09-06 19.58.25.png](Users/ogisotomo/Desktop/スクリーンショット 2019-09-06 19.58.25.png)
+![https://sukusho.nu/7K3I/](https://sukusho.nu/7K3I/)
 
 # ギブテック
 ## 概要
